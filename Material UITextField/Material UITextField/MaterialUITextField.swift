@@ -11,50 +11,59 @@ import UIKit
 @IBDesignable
 class MaterialUITextField: UITextField {
     
-    var borderLayer: CALayer!
+    var borderLayer: CAShapeLayer!
     
     @IBInspectable
     var borderColor: UIColor = UIColor.clearColor() {
         didSet {
-            setNeedsUpdate()
+            setNeedsDisplay()
         }
     }
     
     @IBInspectable
     var borderWidth: CGFloat = 0 {
         didSet {
-            setNeedsUpdate()
+            setNeedsDisplay()
         }
-    }
-    
-    func setNeedsUpdate() {
-        setNeedsDisplay()
     }
     
     override func layoutSubviews() {
         super.layoutSubviews()
-        setBorderLayer()
-    }
-    
-    func setBorderLayer() {
-        if borderLayer == nil {
-            self.borderStyle = UITextBorderStyle.None;
-            let border = CALayer()
-            let width = CGFloat(1.0)
-            border.borderColor = borderColor.CGColor
-            border.frame = CGRect(x: 0, y: self.frame.size.height - width,   width:  self.frame.size.width, height: self.frame.size.height)
-            
-            border.borderWidth = borderWidth
-            self.layer.addSublayer(border)
-            self.layer.masksToBounds = true
-        }
+        layoutBorder()
     }
     
     override func drawRect(rect: CGRect) {
         super.drawRect(rect)
-        
-        self.borderStyle = UITextBorderStyle.None;
+        drawBorder()
     }
     
+    //
+    // Add border layer as sub layer
+    //
+    func layoutBorder() {
+        if borderLayer == nil {
+            borderLayer = CAShapeLayer()
+            borderLayer.frame = layer.bounds
+            layer.addSublayer(borderLayer)
+        }
+    }
+    
+    //
+    // Redraw the border
+    //
+    func drawBorder() {
+        if borderLayer != nil {
+            let size = layer.frame.size
+            let path = UIBezierPath()
+            
+            path.moveToPoint(CGPointMake(0, size.height))
+            path.addLineToPoint(CGPointMake(size.width, size.height))
+            path.closePath()
+            
+            borderLayer.lineWidth = borderWidth
+            borderLayer.strokeColor = borderColor.CGColor
+            borderLayer.path = path.CGPath
+        }
+    }
     
 }
