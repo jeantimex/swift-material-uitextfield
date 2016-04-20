@@ -1,2 +1,5 @@
-# swift-material-uitextfield
+# Material UITextField (Swift)
+
 Another material-style UITextField written in Swift.
+
+![Screenshot](./screenshot.png)
