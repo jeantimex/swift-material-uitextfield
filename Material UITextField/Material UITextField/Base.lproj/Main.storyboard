@@ -34,11 +34,19 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Material UITextField" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dU5-r5-dNK">
+                                <rect key="frame" x="225" y="164" width="151" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="dU5-r5-dNK" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="LUA-tB-QSZ"/>
                             <constraint firstItem="YOz-Jl-ANV" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Pyz-Kd-v3J"/>
                             <constraint firstItem="YOz-Jl-ANV" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="lNR-TA-vp2"/>
+                            <constraint firstItem="YOz-Jl-ANV" firstAttribute="top" secondItem="dU5-r5-dNK" secondAttribute="bottom" constant="100" id="yHN-kj-hJW"/>
                         </constraints>
                     </view>
                 </viewController>
