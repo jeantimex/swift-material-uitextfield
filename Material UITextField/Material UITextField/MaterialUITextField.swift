@@ -118,6 +118,19 @@ extension String {
     }
     #endif
     
+    //
+    // Cleanup the notification/event listeners when the view is about to dissapear
+    //
+    override func willMoveToWindow(newWindow: UIWindow?) {
+        super.willMoveToWindow(newWindow)
+        
+        if newWindow == nil {
+            NSNotificationCenter.defaultCenter().removeObserver(self)
+        } else {
+            registerNotifications()
+        }
+    }
+    
     func registerNotifications() {
         NSNotificationCenter.defaultCenter().addObserver(self, selector: #selector(MaterialUITextField.onTextChanged), name: UITextFieldTextDidChangeNotification, object: self)
     }
