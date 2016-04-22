@@ -2,4 +2,4 @@
 
 Another material-style UITextField purely written in Swift.
 
-![Screenshot](./screencast.gif)
+![Screenshot](./images/screencast.gif)
