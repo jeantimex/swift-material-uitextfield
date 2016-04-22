@@ -2,6 +2,8 @@
 
 Another material-style UITextField purely written in Swift 2.0 inspired by [Material-UI](http://www.material-ui.com/).
 
+Rather than using a UIView, this MaterialUITextField extends UITextField so that you can select existing UITextField and apply the new material style.
+
 ![](./images/screencast.gif)
 
 #### How to use?
