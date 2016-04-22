@@ -1,5 +1,5 @@
 # Material UITextField (Swift)
 
-Another material-style UITextField written in Swift.
+Another material-style UITextField purely written in Swift.
 
-![Screenshot](./screenshot.gif)
+![Screenshot](./screencast.gif)

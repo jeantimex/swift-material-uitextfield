@@ -15,6 +15,8 @@
 		0A1D0D7F1CC5F7820042DD38 /* Material_UITextFieldTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A1D0D7E1CC5F7820042DD38 /* Material_UITextFieldTests.swift */; };
 		0A1D0D8A1CC5F7820042DD38 /* Material_UITextFieldUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A1D0D891CC5F7820042DD38 /* Material_UITextFieldUITests.swift */; };
 		0A1D0D981CC5F7B80042DD38 /* MaterialUITextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A1D0D971CC5F7B80042DD38 /* MaterialUITextField.swift */; };
+		0A27E9871CC9448D0093E2A7 /* fontawesome-webfont.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0A27E9861CC9441C0093E2A7 /* fontawesome-webfont.ttf */; };
+		0A27E9891CC997D00093E2A7 /* OpenSans-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0A27E9881CC9979D0093E2A7 /* OpenSans-Regular.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +51,8 @@
 		0A1D0D891CC5F7820042DD38 /* Material_UITextFieldUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Material_UITextFieldUITests.swift; sourceTree = "<group>"; };
 		0A1D0D8B1CC5F7820042DD38 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0A1D0D971CC5F7B80042DD38 /* MaterialUITextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MaterialUITextField.swift; sourceTree = "<group>"; };
+		0A27E9861CC9441C0093E2A7 /* fontawesome-webfont.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "fontawesome-webfont.ttf"; sourceTree = "<group>"; };
+		0A27E9881CC9979D0093E2A7 /* OpenSans-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-Regular.ttf"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,7 +103,9 @@
 		0A1D0D681CC5F7820042DD38 /* Material UITextField */ = {
 			isa = PBXGroup;
 			children = (
+				0A27E9881CC9979D0093E2A7 /* OpenSans-Regular.ttf */,
 				0A1D0D691CC5F7820042DD38 /* AppDelegate.swift */,
+				0A27E9861CC9441C0093E2A7 /* fontawesome-webfont.ttf */,
 				0A1D0D6B1CC5F7820042DD38 /* ViewController.swift */,
 				0A1D0D6D1CC5F7820042DD38 /* Main.storyboard */,
 				0A1D0D701CC5F7820042DD38 /* Assets.xcassets */,
@@ -232,6 +238,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0A27E9891CC997D00093E2A7 /* OpenSans-Regular.ttf in Resources */,
+				0A27E9871CC9448D0093E2A7 /* fontawesome-webfont.ttf in Resources */,
 				0A1D0D741CC5F7820042DD38 /* LaunchScreen.storyboard in Resources */,
 				0A1D0D711CC5F7820042DD38 /* Assets.xcassets in Resources */,
 				0A1D0D6F1CC5F7820042DD38 /* Main.storyboard in Resources */,
@@ -488,6 +496,7 @@
 				0A1D0D901CC5F7820042DD38 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		0A1D0D911CC5F7820042DD38 /* Build configuration list for PBXNativeTarget "Material UITextFieldTests" */ = {
 			isa = XCConfigurationList;
@@ -496,6 +505,7 @@
 				0A1D0D931CC5F7820042DD38 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		0A1D0D941CC5F7820042DD38 /* Build configuration list for PBXNativeTarget "Material UITextFieldUITests" */ = {
 			isa = XCConfigurationList;
@@ -504,6 +514,7 @@
 				0A1D0D961CC5F7820042DD38 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
